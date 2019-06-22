@@ -10,7 +10,7 @@ Used to determine the number of coins required to make change from a given amoun
 
 ## Usage:
 
-- npm run start
+- npm run start (desired amount, ex: 4.5)
 - npm run test: This is set up to do an number of things...
   - Runs the Jest test files ( jest )
   - Reports on skipped tests ( jest --reporters jest-skipped-reporter )
