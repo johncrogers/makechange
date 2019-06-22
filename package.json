@@ -1,0 +1,19 @@
+{
+  "name": "makechange",
+  "version": "1.0.0",
+  "description": "Used to determine the number of coins required to make change from a given amount.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest && npm run test:skipped && npm run test:files",
+    "test:skipped": "jest --reporters jest-skipped-reporter",
+    "test:files": "node ./util/testCoverageReporter/index.js"
+  },
+  "author": "John Rogers",
+  "license": "ISC",
+  "dependencies": {
+    "console.table": "^0.10.0",
+    "jest": "^24.8.0",
+    "jest-skipped-reporter": "0.0.4"
+  }
+}
