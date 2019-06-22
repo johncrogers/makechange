@@ -10,7 +10,7 @@
 */
 
 const { makeChange } = require("./helpers");
-const { coinOptions } = require("./config.json");
+const { coinDenominations } = require("./config.json");
 const userInput = parseFloat(process.argv[2]);
 
-console.log(makeChange(userInput, coinOptions));
+console.log(makeChange(userInput, coinDenominations));

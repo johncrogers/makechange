@@ -1,8 +1,8 @@
-module.exports = (amount, coinOptions = []) => {
+module.exports = (amount, coinDenominations = []) => {
   const highToLow = require("../highToLow");
   const calculateRequiredCoins = require("../calculateRequiredCoins");
 
-  const result = coinOptions
+  const result = coinDenominations
     .sort(highToLow)
     .reduce(calculateRequiredCoins, { amount });
 
